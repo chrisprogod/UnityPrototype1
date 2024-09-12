@@ -14,5 +14,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //move the vehicule
+        transform.Translate(0, 0, 1);
+        transform.Translate(Vector3.forward)
     }
 }
