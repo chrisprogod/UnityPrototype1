@@ -10,7 +10,8 @@ public class Respawn : MonoBehaviour
     {
         if(transform.position.y < threshold)
         {
-            transform.position = new Vector3();
+            transform.position = new Vector3(0f,4f, 0f);
+            transform.rotation = new Quaternion(0f ,0f,0f, 0f);
         }
     }
 }
