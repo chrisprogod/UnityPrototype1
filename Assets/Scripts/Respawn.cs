@@ -7,8 +7,8 @@ using UnityEngine.UIElements;
 public class Respawn : MonoBehaviour
 {
     public float threshold;
-    
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
         if(transform.position.y < threshold || Input.GetKeyDown(KeyCode.R))
         {
@@ -16,4 +16,6 @@ public class Respawn : MonoBehaviour
             transform.rotation = new Quaternion(0f ,0f,0f, 0f);
         }
     }
+
 }
+
