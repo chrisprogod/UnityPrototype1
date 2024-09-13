@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
         fowardInpunt = Input.GetAxis("Vertical");
         //move the vehicule
         transform.Translate(Vector3.forward * Time.deltaTime * speed* fowardInpunt);
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
     }
 }
