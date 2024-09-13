@@ -20,6 +20,6 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         //move the vehicule
         transform.Translate(Vector3.forward *Time.deltaTime*speed);
-        transform.Translate(Vector3.right*Time.deltaTime*turnSpeed);
+        transform.Translate(Vector3.right*Time.deltaTime*horizontalInput);
     }
 }
