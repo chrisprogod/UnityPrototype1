@@ -10,7 +10,7 @@ public class Respawn : MonoBehaviour
 
     private void Update()
     {
-        if(transform.position.y < threshold || Input.GetKeyDown(KeyCode.R))
+        if(transform.position.y < threshold || Input.GetKeyDown(KeyCode.K))
         {
             transform.position = new Vector3();
             transform.rotation = new Quaternion();
