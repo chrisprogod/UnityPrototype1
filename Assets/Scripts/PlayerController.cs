@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "EndPoint")
         {
-            transform.position = new Vector3(0f,2f, 0f);
-            transform.rotation = new Quaternion(0f ,0f,0f, 0f);
+            transform.position = new Vector3();
+            transform.rotation = new Quaternion();
         }
     }
 
