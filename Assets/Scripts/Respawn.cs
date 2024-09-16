@@ -8,12 +8,12 @@ public class Respawn : MonoBehaviour
 {
     public float threshold;
 
-    private void FixedUpdate()
+    private void Update()
     {
         if(transform.position.y < threshold || Input.GetKeyDown(KeyCode.R))
         {
-            transform.position = new Vector3(0f,2f, 0f);
-            transform.rotation = new Quaternion(0f ,0f,0f, 0f);
+            transform.position = new Vector3();
+            transform.rotation = new Quaternion();
         }
     }
 
