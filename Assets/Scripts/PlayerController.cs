@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,8 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "EndPoint")
         {
-            transform.position = new Vector3();
-            transform.rotation = new Quaternion();
+              SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
