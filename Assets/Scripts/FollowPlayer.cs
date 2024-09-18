@@ -6,7 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
     public int xCam = 0;
-    public int yCam = 5;
+    public int yCam = 6;
     public int zCam = 7;
 
     // Start is called before the first frame update
