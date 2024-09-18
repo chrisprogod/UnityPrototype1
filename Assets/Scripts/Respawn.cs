@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
 {
@@ -12,8 +13,7 @@ public class Respawn : MonoBehaviour
     {
         if(transform.position.y < threshold || Input.GetKeyDown(KeyCode.R))
         {
-            transform.position = new Vector3();
-            transform.rotation = new Quaternion();
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
