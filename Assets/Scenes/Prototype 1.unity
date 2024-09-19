@@ -1116,7 +1116,7 @@ MonoBehaviour:
   player: {fileID: 324884486}
   xCam: 0
   yCam: 7
-  zCam: -10
+  zCam: -15
 --- !u!1 &540967924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 126218, guid: da59e5a3713884d4f9e9667c2befa1a4, type: 3}
